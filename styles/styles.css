@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root  {
+    --black: rgba(0, 0, 0, 1);
+    --Rich-Black: rgba(10, 17, 31, 1);
+    --oxford-blue: rgba(20, 33, 61, 1);
+    --coyote-brown: rgba(136, 98, 39, 1);
+    --orange-web: rgba(252, 163, 17, 1);
+    --Gold-crayola: rgba(241, 196, 123, 1);
+    --cultured: rgba(168, 168, 168, 1);
+    --platinum: rgba(229, 229, 229, 1);
+    --withe: rgba(255, 255, 255, 1);
+    --font-tittle: 'Press Start 2P', cursive;
+    --text: Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ===========================================BODY============================================================================================= */
+
+body{
+    background-color: var(--oxford-blue);
+}
+/* ===========================================HEADER======================================================================= */
+header{
+    padding: 0px 10px;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    background-color: var(--Rich-Black)
+}
+
+.logo-header--img{
+    height:32px; 
+    width: auto;
+    margin-left: 10px;
+}
+
+.header-portafolio-container{
+    list-style: none;
+    display: flex;
+    justify-self: right;
+}
+
+
+.enlace-portafolio{
+    color: var(--platinum);
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: right;
+}
+
+/* ===========================================MAIN========================================================================= */
+main{
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--oxford-blue);
+    margin: 0;
+    height: 77vh;
+    margin-top: 2.4rem;
+    margin-bottom: 4.4rem;
+}
+/* =========================================== CONTENIDO ======================================================================= */
+main .form--container{
+    background-color: rgba(10, 17, 31, .75);
+    width: 30%;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 1px 10px 4px rgb(10 17 26 / 50%);
+    position: relative;
+}
+
+.form--tittle{
+    width: 100%;
+    color: var(--platinum);
+    font-family: var(--text);
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+main input{
+    margin: 10px 10px;
+    outline: none;
+    border: 1px solid var(--cultured);
+    border-radius: 3px;
+    line-height: 2rem;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.form--input-names{
+    width: 43%;
+}
+
+.form--select-gender{
+    width: 43%;
+    margin: 10px 1rem 10px 10px;
+    line-height: 2rem;
+}
+
+.form--select-country{
+    width: 43%;
+    margin: 10px 1rem 10px 10px;
+    line-height: 2rem;
+}
+
+.form--select-date{
+    outline: none;
+    border-radius: 2px;
+    width: 20%;
+    margin: 10px 5px 10px 10px;
+}
+
+.form--input-email{
+    width: 90%;
+}
+.form--input-password{
+    width: 42%;
+}
+
+.form--password-rules{
+    background-color: rgba(229, 229, 229, .9);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-family: var(--text);
+    line-height: 1.2rem;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    right: 8%;
+    top: 46%;
+}
+
+
+main .form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+}
+
+.form-button{
+    margin: 20px auto;
+    line-height: 2rem;
+    width: 7rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid var(--cultured);
+}
+
+/*------------------------------------------------------------------*/
+
+.lobby{
+    margin: 0 auto;
+    background-color: rgba(228, 228, 238, 9);
+    width: 80%;
+    font-family: var(--text);
+    padding: 20px;
+}
+
+.lobby--tittle{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.lobby-description{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.lobby-description-text{
+    text-align: justify;
+}
+
+.lobby-item{
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.lobby-item span{
+    font-weight: 500;
+    color: var(--Rich-Black)
+}
+
+
+
+/* =========================================== ANIMACIONES ======================================================================= */
+.out{
+    display: none;
+}
+
+.campo-erroneo{
+    border: 2px solid rgba(255, 80, 80,.85);
+}
+
+.fa-exclamation-circle{
+    color: rgba(255, 80, 80,.85);
+    font-size: 1.4rem;
+    position: absolute;
+}
+
+.inputName{
+    top: 23.5%;
+    left: 41%;
+}
+
+.inputApellido{
+    top: 23.5%;
+    left: 86%;
+}
+
+.inputEmail{
+    top: 60%;
+    left: 83%;
+}
+
+.inputPassword{
+    top: 72.5%;
+    left: 40%;
+}
+
+.inputConfirmPassword{
+    top: 72.5%;
+    left: 84%;
+}
+
+/* =========================================== FOOTER PLANTILLA ======================================================================= */
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--Rich-Black);
+}
+
+.footer-left{
+    min-width: 320px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-left h3{
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--platinum);
+}
+
+.footer-right{
+    min-width: 320px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-right a{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin: 10px 20px;
+}
+
+.facebook{
+    background-image: url(../assets/icon/facebook.png);
+}
+
+.instagram{
+    background-image: url(../assets/icon/instagram.png);
+}
+
+.twitter{
+    background-image: url(../assets/icon/twitter.png);
+}
+
+.github{
+    background-image: url(../assets/icon/github.png);
+}
+/* =========================================================================== RESPONSIVE ===========================================================================  */
+/* ===========================================media 460px========================================================================= */
+@media screen and (min-width: 460px){
+
+    html {
+        font-size: 68%;
+    }
+    main .form--container {
+        min-width: 336px;
+
+} /* Final  del media 460px*/
+
+
+/* ===========================================media 800px========================================================================= */
+@media screen and (min-width: 1024px){
+
+    html {
+        font-size: 78%;
+    }
+
+    main{
+        margin-top: 2.4rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .logo-header--img{
+        margin: 0 40px;
+    }
+
+    .enlace-portafolio{
+        margin-right: 50px;
+    }
+
+    .base {
+        height: 46rem;
+    }
+
+    .inputApellido {
+        top: 23.5%;
+        left: 84%;
+    }
+
+    .inputEmail {
+        top: 59.2%;
+        left: 83%;
+    }
+
+    .inputPassword {
+        top: 72.3%;
+        left: 40%;
+    }
+
+    .inputConfirmPassword {
+        top: 72.3%;
+        left: 82%;
+    }
+
+} /* Final  del media 1024px*/
+
